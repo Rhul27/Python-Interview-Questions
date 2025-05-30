@@ -18,18 +18,18 @@
  
 class Solution:
     def canBeTypedWords(self, text: str, brokenLetters: str) -> int:
-        words = text.split()
-        count = len(words)
-        for word in words:
-            for letter in brokenLetters:
-                if letter in word:
-                    count -= 1
-                    break
-        return count
+        broken = set(brokenLetters)
+        return sum(1 for word in text.split() if not any(c in broken for c in word))
 
-text = "hello world"
-brokenLetters = "ad"
-solution = Solution()
-result = solution.canBeTypedWords(text, brokenLetters)
-print(result) 
+# class Solution:
+#     def canBeTypedWords(self, text: str, brokenLetters: str) -> int:
+#         words = text.split()
+#         count = len(words)
+#         for word in words:
+#             for letter in brokenLetters:
+#                 if letter in word:
+#                     count -= 1
+#                     break
+#         return count
+
  
