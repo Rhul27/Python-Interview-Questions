@@ -1,6 +1,6 @@
 # Read a text file and give number of lines, words and characters present in the text file
 
-f=open('hello.txt',mode="r")
+f=open('question18/hello.txt',mode="r")
 num_of_line=0
 num_of_words=0
 num_of_characters=0
