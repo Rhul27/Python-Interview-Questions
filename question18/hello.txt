@@ -1,3 +1,7 @@
 hello world
 learn programming
-do work
+do workpractice coding everyday
+read documentation
+write clean code
+build projects
+debug errors
